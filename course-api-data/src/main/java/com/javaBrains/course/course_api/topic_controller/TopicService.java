@@ -31,8 +31,8 @@ public class TopicService {
 	public Topic getTopic(String id) {
 		/*return tList.stream().filter(t->t.getId().equals(id))//.findAny().get();
 				.findFirst().get();*/
-	//	return topicRepository.findById(id);
-		return null;
+		return topicRepository.findById(id).get();
+//		return null;
 	}
 
 	public void addTopic(Topic topic) {
